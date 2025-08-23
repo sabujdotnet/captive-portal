@@ -1,0 +1,42 @@
+server:
+  address: ":8080"
+
+database:
+  type: "mysql"
+  dsn: "username:password@tcp(localhost:3306)/captive_portal?parseTime=true"
+
+mikrotik:
+  host: "192.168.90.1"
+  port: 8728
+  username: "admin"
+  password: "password"
+
+phpnuxbill:
+  url: "http://172.16.1.2"
+  api_key: "your_api_key_here"
+
+radius:
+  server: "127.0.0.1"
+  port: 1812
+  secret: "phpRad"
+
+social_auth:
+  facebook:
+    client_id: "your_facebook_app_id"
+    client_secret: "your_facebook_app_secret"
+    redirect_url: "https://portal.example.com/social/facebook/callback"
+  google:
+    client_id: "your_google_client_id"
+    client_secret: "your_google_client_secret"
+    redirect_url: "https://portal.example.com/social/google/callback"
+
+branding:
+  company_name: "Your Company"
+  logo_url: "/static/images/logo.png"
+  primary_color: "#3498db"
+  secondary_color: "#2ecc71"
+
+features:
+  voucher_enabled: true
+  social_login_enabled: true
+  terms_conditions_enabled: true
